@@ -16,8 +16,8 @@
       [x] - Boilerplate for JS
       [x] - Find the form elements
       [x] - Attach event for posting form
-      [] - Create template in JS
-      [] - Hook template with value from event in posting form
+      [x] - Create template in JS
+      [x] - Hook template with value from event in posting form
    -->
   <body>
       <main class="main">
@@ -29,7 +29,8 @@
           -->
           <textarea class="postForm__text"
                     data-js="postForm__text"
-                    name="name">
+                    name="postText"
+                    value="does this work">
           </textarea>
           <input class="postForm__submit"
                  data-js="postForm__submit"
@@ -37,18 +38,20 @@
                  value="post">
         </form>
 
-        <article class="post">
-          <img alt="stompy robot"
-               class="post__profilePhoto"
-               src="http://img.cinemablend.com/cb/8/e/7/e/3/5/8e7e35cf9777f94ab1f5e51bcdec49214e4ffb2c33f4c575ba4bbb5ff425271c.jpg">
-          <a class="post__link"
-             href="#">
-            Stompy Robot
-          </a>
-          <p class="post__text">
-            Lucas ipsum dolor sit amet padmé hutt calrissian darth binks padmé bespin organa jango boba. Boba organa secura darth amidala antilles skywalker ben. Yavin yoda moff darth. Ponda darth owen cade antilles. Ewok skywalker secura vader. Hutt mon alderaan hutt luke. Leia jade darth ben anakin fett. Mon mandalorians yavin mustafar jabba obi-wan luke mon gamorrean. Leia dooku leia coruscant dagobah grievous. Calamari solo sidious skywalker. Ackbar mon binks sith qui-gon sidious yoda mon. Moff maul maul tusken raider solo hutt.
-          </p>
-        </article>
+        <section data-js='posts'>
+          <article class="post">
+            <img alt="stompy robot"
+                 class="post__profilePhoto"
+                 src="http://img.cinemablend.com/cb/8/e/7/e/3/5/8e7e35cf9777f94ab1f5e51bcdec49214e4ffb2c33f4c575ba4bbb5ff425271c.jpg">
+            <a class="post__link"
+               href="#">
+              Stompy Robot
+            </a>
+            <p class="post__text">
+              Lucas ipsum dolor sit amet padmé hutt calrissian darth binks padmé bespin organa jango boba. Boba organa secura darth amidala antilles skywalker ben. Yavin yoda moff darth. Ponda darth owen cade antilles. Ewok skywalker secura vader. Hutt mon alderaan hutt luke. Leia jade darth ben anakin fett. Mon mandalorians yavin mustafar jabba obi-wan luke mon gamorrean. Leia dooku leia coruscant dagobah grievous. Calamari solo sidious skywalker. Ackbar mon binks sith qui-gon sidious yoda mon. Moff maul maul tusken raider solo hutt.
+            </p>
+          </article>
+        </section>
       </main>
   </body>
 </html>
