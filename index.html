@@ -14,6 +14,7 @@
       [x] - Style article
       [x] - Pull in jQuery
       [x] - Boilerplate for JS
+      [x] - Find the form elements
       [] - Attach event for posting form
       [] - Create template in JS
       [] - Hook template with value from event in posting form
@@ -27,9 +28,11 @@
               Tried to use the attribute `placeholder` it would not render as intended.
           -->
           <textarea class="postForm__text"
+                    data-js="postForm__text"
                     name="name">
           </textarea>
           <input class="postForm__submit"
+                 data-js="postForm__submit"
                  type="submit"
                  value="post">
         </form>
