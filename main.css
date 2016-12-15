@@ -2,12 +2,23 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Helvetica;
+}
+
 .main {
   margin: 0 auto;
   width: 650px;
 }
 
+/*
+*
+* STYLES FOR
+*    POST FORM
+*/
+
 .postForm {
+  margin-bottom: 50px;
   /*
     Because we floated a child element (see the submit button)
     we need to make sure this parent element is checking it's "overflow"
@@ -38,4 +49,28 @@
   */
   -webkit-appearance: initial;
   -moz-appearance: initial;
+}
+
+
+/*
+*
+* STYLES FOR
+*    POST ARTICLE
+*/
+
+.post__profilePhoto {
+  height: 50px;
+  width: 50px;
+}
+
+.post__link {
+  display: inline-block;
+  font-size: 18px;
+  height: 50px;
+  /*
+    Adjusting the line-height will ensure "vertical alignment"
+      with elements in the same line
+  */
+  line-height: 50px;
+  vertical-align: top;
 }
