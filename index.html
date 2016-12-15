@@ -8,9 +8,17 @@
   </head>
   <body>
       <main class="main">
-        <form action="#">
-          <textarea name="name"></textarea>
-          <input type="submit">
+        <form action="#"
+              class="postForm">
+          <textarea class="postForm__text"
+                    name="name">
+                    <!--
+                      @TODO: need to create working a placeholder for "Write a post..."
+                        Tried to use the attribute `placeholder` it would not render as intended. 
+                    -->
+          </textarea>
+          <input class="postForm__submit"
+                 type="submit">
         </form>
 
         <article>
