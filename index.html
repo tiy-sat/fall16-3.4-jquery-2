@@ -10,23 +10,30 @@
       <main class="main">
         <form action="#"
               class="postForm">
+          <!--
+            @TODO: need to create working a placeholder for "Write a post..."
+              Tried to use the attribute `placeholder` it would not render as intended.
+          -->
           <textarea class="postForm__text"
                     name="name">
-                    <!--
-                      @TODO: need to create working a placeholder for "Write a post..."
-                        Tried to use the attribute `placeholder` it would not render as intended. 
-                    -->
           </textarea>
           <input class="postForm__submit"
-                 type="submit">
+                 type="submit"
+                 value="post">
         </form>
 
-        <article>
-          <img src="http://img.cinemablend.com/cb/8/e/7/e/3/5/8e7e35cf9777f94ab1f5e51bcdec49214e4ffb2c33f4c575ba4bbb5ff425271c.jpg" alt="stompy robot">
-          <a href="#">Stompy Robot</a>
-          <p>Lucas ipsum dolor sit amet padmé hutt calrissian darth binks padmé bespin organa jango boba. Boba organa secura darth amidala antilles skywalker ben. Yavin yoda moff darth. Ponda darth owen cade antilles. Ewok skywalker secura vader. Hutt mon alderaan hutt luke. Leia jade darth ben anakin fett. Mon mandalorians yavin mustafar jabba obi-wan luke mon gamorrean. Leia dooku leia coruscant dagobah grievous. Calamari solo sidious skywalker. Ackbar mon binks sith qui-gon sidious yoda mon. Moff maul maul tusken raider solo hutt.</p>
+        <article class="post">
+          <img alt="stompy robot"
+               class="post__profilePhoto"
+               src="http://img.cinemablend.com/cb/8/e/7/e/3/5/8e7e35cf9777f94ab1f5e51bcdec49214e4ffb2c33f4c575ba4bbb5ff425271c.jpg">
+          <a class="post__link"
+             href="#">
+            Stompy Robot
+          </a>
+          <p class="post__text">
+            Lucas ipsum dolor sit amet padmé hutt calrissian darth binks padmé bespin organa jango boba. Boba organa secura darth amidala antilles skywalker ben. Yavin yoda moff darth. Ponda darth owen cade antilles. Ewok skywalker secura vader. Hutt mon alderaan hutt luke. Leia jade darth ben anakin fett. Mon mandalorians yavin mustafar jabba obi-wan luke mon gamorrean. Leia dooku leia coruscant dagobah grievous. Calamari solo sidious skywalker. Ackbar mon binks sith qui-gon sidious yoda mon. Moff maul maul tusken raider solo hutt.
+          </p>
         </article>
-
       </main>
   </body>
 </html>
